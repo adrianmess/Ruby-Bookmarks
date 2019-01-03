@@ -3,17 +3,17 @@
   <div class="book">
     <div class="row">
       <div class="col-md-1">
-        <p class="rank-this-week"> </p>
+        <p class="rank-this-week"><% books.rank_this_week %> </p>
       </div>
       <div class="col-md-9">
-        <p class="title">  </p>
-        <p class="author">by  </p>
-        <p class="publisher">( )</p>
-        <p class="description">  </p>
+        <p class="title"> <% books.title %> </p>
+        <p class="author">by <% books.author %>  </p>
+        <p class="publisher">(<% books.publisher %>)</p>
+        <p class="description"> <% books.description %> </p>
         <%= link_to 'See all Editorial Reviews', book %>
       </div>
       <div class="col-md-2">
-        <p class="weeks-on-list">  weeks on list</p>
+        <p class="weeks-on-list"> <% books.weeks_on_list %>  weeks on list</p>
       </div>
     </div>
   </div>
